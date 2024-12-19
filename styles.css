@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(275, 100%, 97%);
+  font-family: Work Sans;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh;
+}
+.container {
+  width: 40%;
+  /*height: 400px;*/
+  border: none;
+  box-shadow: 0 0 20px 10px rgba(100, 100, 100, 0.1);
+  border-radius: 10px;
+  background-color: white;
+  /*overflow: scroll;*/
+}
+.header {
+  padding: 20px 0px 10px;
+  margin: 0 30px;
+}
+.star {
+  float: left;
+  margin-right: 15px;
+  max-width: 30px;
+}
+h1 {
+  font-weight: 800;
+}
+.faq-item {
+  border-bottom: 1px solid hsla(293, 16%, 49%, 0.195);
+  padding: 20px 0;
+  margin: 0 30px;
+}
+.faq-item:last-child {
+  border-bottom: none;
+  margin-bottom: 20px;
+}
+
+.faq-ans {
+  display: none;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 15px;
+  color: hsl(292, 16%, 49%);
+}
+label {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+label:hover {
+  color: hsl(292, 75%, 44%);
+}
+.icon {
+  float: left;
+  margin-left: auto;
+}
+.icon-minus {
+  display: none;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+}
+/*For a FAQ accordion using radio*/
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked + label .icon {
+  display: none;
+}
+input[type="radio"]:checked + label .icon-minus {
+  display: inline;
+}
+input[type="radio"]:checked ~ .faq-ans {
+  display: block;
+}
+
+/*For a FAQ accordion using checkbox*/
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked + label .icon {
+  display: none;
+}
+input[type="checkbox"]:checked + label .icon-minus {
+  display: inline;
+}
+input[type="checkbox"]:checked ~ .faq-ans {
+  display: block;
+}
