@@ -77,6 +77,14 @@ label:hover {
     width: 95%;
   }
 }
+@media only screen and (max-width: 300px) {
+  .container {
+    width: 90%;
+  }
+  body {
+    background-image: url('/images/background-pattern-mobile.svg');
+  }
+}
 /*For a FAQ accordion using radio*/
 input[type="radio"] {
   display: none;
