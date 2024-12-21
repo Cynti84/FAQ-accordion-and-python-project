@@ -30,4 +30,4 @@ Both files achieve the same functionality but operate differently based on the i
 - go to https://cynti84.github.io/FAQ-accordion-and-python-project/ to check out my live site
 - clone the repository to your local machine:
    ```bash
-   git clone https://github.com/Cynti84/FAQ-accordion-and-python-project.git
+git clone https://github.com/Cynti84/FAQ-accordion-and-python-project.git
