@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url('/images/background-pattern-desktop.svg');
+  background-image: url('images/background-pattern-desktop.svg');
   background-repeat: no-repeat;
   background-color: hsl(275, 100%, 97%);
   font-family: Work Sans;
