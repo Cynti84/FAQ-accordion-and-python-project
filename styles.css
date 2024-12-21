@@ -82,7 +82,7 @@ label:hover {
     width: 90%;
   }
   body {
-    background-image: url('/images/background-pattern-mobile.svg');
+    background-image: url('images/background-pattern-mobile.svg');
   }
 }
 /*For a FAQ accordion using radio*/
