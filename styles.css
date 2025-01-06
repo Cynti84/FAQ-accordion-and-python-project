@@ -55,15 +55,16 @@ label {
   font-weight: 600;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   cursor: pointer;
 }
 label:hover {
   color: hsl(292, 75%, 44%);
 }
-.icon {
+/*.icon {
   float: left;
   margin-left: auto;
-}
+}*/
 .icon-minus {
   display: none;
 }
